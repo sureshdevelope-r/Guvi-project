@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update profile</title>
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+</head>
+<body>
+    <body class="bg-light">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="text-center mb-4">User Profile</h2>
+                    <!-- Update profile form -->
+                    <form id="updateProfileForm" action="./php/profile.php" method="POST">
+                        <div class="form-group">
+                            <label for="updatePhone">Phone Number</label>
+                            <input type="tel" class="form-control" id="updatePhone" name="updatePhone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="updateAge">Age</label>
+                            <input type="number" class="form-control" id="updateAge" name="updateAge" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="updateDob">Date of Birth</label>
+                            <input type="date" class="form-control" id="updateDob" name="updateDob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="updateGender">Gender</label>
+                            <select class="form-control" id="updateGender" name="updateGender" required>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="updatePassword">Password</label>
+                            <input type="password" class="form-control" id="updatePassword" name="updatePassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Update Profile</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/jquery.min.js"></script>
+        <script src="./js/profile.js"></script>
+        <script src="./assets/js/bootstrap.min.js"></script>
+</body>
+</html>

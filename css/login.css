@@ -1,0 +1,24 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+/* Center the container on smaller screens */
+@media (max-width: 576px) {
+    .container {
+        margin-top: 15%;
+    }
+}
+
+/* Add box shadow to the container */
+.container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the form inside the container */
+form {
+    width: 100%;
+}
